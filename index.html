@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cse110 Lab2</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    </head>
+
+    <body>
+
+        <hr>
+
+        <nav>
+            <img src="icon.png" alt="icon" width="15"/>
+            Recent: &nbsp;&nbsp;
+            <a href="/#day3">Apr 11 Sat</a> |
+            <a href="/#day2">Apr 10 Sat</a> |
+            <a href="/#day1">Apr 09 Fri</a> 
+        </nav>
+
+        <hr>
+
+        <br/>
+
+        <header>
+            <h1>Silent Universe</h1>
+        </header>
+        <audio loop controls>
+            <source src="freebgmusic.mp3" type="audio/mp3">
+        </audio>
+        <div>
+            <video autoplay muted loop width="1024">
+                <source src="freevideo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <hr>
+        <main>
+            <section>
+                <a name="day3"><h2>Apri 11 Sun</h2></a>
+                <div>
+                    <ul>
+                        <li> <b>Homework 142L</b>
+                            <details>
+                                <summary>Setup github repos <em>https</em> accessibility</summary>
+                                <p> Create a github account for the class. Setup https and 2-phasse authentication</p>
+                            </details>
+                        </li>
+                        <li> <b>Check due</b>
+                            <details>
+                                <summary>Check if there's anything due</summary>
+                                <p> Canvas, Gradescope and Ed all finished</p>
+                            </details>
+                        </li>
+
+                    </ul>
+                </div>
+                <br/>
+                <div>
+                    <h3>TODO:</h3>
+                    <ol>
+                        <li><i>CSE 142 reading</i></li>
+                        <li><i>POLI 27 reading</i></li>
+                        <li><i><strong>Check Academic History</strong></i></li>
+                    </ol>
+                </div>
+                
+            </section>
+
+            <hr>
+            <section>
+                <a name="day2"><h2>Apri 10 Sat</h2></a>
+                <div>
+                    <ul>
+                        <li> <b>Homework MATH20E</b>
+                            <details>
+                                <summary>5.1 ~ 5.4</summary>
+                                <p> Odd number questions, except for 5.1:29, 5.2:31, 33</p>
+                            </details>
+                            <details>
+                                <summary>Read 6.1 ~ 6.5</summary>
+                                <p> Remember to do the reading quiz</p>
+                            </details>
+                        </li>
+                        
+                        <li> <b>CSE 101 Quiz 1</b>
+                            <details>
+                                <summary>videos</summary>
+                                <p> Watch the second week videos again</p>
+                            </details>
+                            <details>
+                                <summary>Practice Quiz</summary>
+                                <P>finish the practice quiz, and try input latex and calculate the time needed to finish a quiz</P>
+                            </details>
+                        </li>
+
+                    </ul>
+                </div>
+                <br/>
+                <div>
+                    <h3>TODO:</h3>
+                    <ol>
+                        <li><i>Homework 142</i></li>
+                        <li><i>Check due</i></li>
+                    </ol>
+                </div>
+
+            </section>
+            <hr>
+
+            <section>
+                <a name="day1"><h2>Apri 09 Fri</h2></a>
+                <div>
+                    <ul>
+                        <li> <b>CSE142L Lab</b>
+                            <details>
+                                <summary>Docker environment and github repo</summary>
+                                <p> Create a github repo for cse142l, copy starter code. Setup docker based environment on the remote server</p>
+                            </details>
+                            <details>
+                                <summary>Greetings</summary>
+                                <p> Modify code.cpp and config.env to modify the program and test the environment. Make sure it's working fine.</p>
+                            </details>
+                        </li>
+                        <li> <b>POLI 27 Discussion</b>
+                            <details>
+                                <summary>Answer the 3 questions</summary>
+                                <p> Answer the 3 questions and update the sheets on the google doc</p>
+                            </details>
+                        </li>
+
+                    </ul>
+                </div>
+                <br/>
+                <div>
+                    <h3>TODO:</h3>
+                    <ol>
+                        <li><i>MATH20E Homework</i></li>
+                        <li><i>CSE 101 Quiz 1</i></li>
+                    </ol>
+                </div>
+
+            </section>
+        </main>
+
+
+        <br/>
+
+        <form onsubmit="">
+        <fieldset>            
+            <legend><b>Add Jounal</b></legend>
+            <label for="title"><b>Title:</b></label><br>
+            <input id="title" type="text" />
+            <button>Add</button><br><br>
+            <label><b>Entry:</b></label><br>
+            <label for="entry_name">Entry Name:</label>
+            <input id="entry_name" type="text"/>
+            <div>
+                <input type="checkbox" id="italic_title" name="italic">
+                <label for="italic_title">Italic</label>
+            </div>
+            <div>
+                <input type="checkbox" id="bold_title" name="bold">
+                <label for="bold_title">Bold</label>
+            </div>
+            <div></div>
+
+            <div>Type:</div>
+            <input type="radio" id="entry_type1"  name="entry_type" value="jounal">
+            <label for="entry_type1">Journal</label><br>
+            <input type="radio" id="entry_type2"  name="entry_type" value="todo">
+            <label for="entry_type1">Todo</label><br>
+            <label for="event_date">Date:</label>
+            <input type="date" id="event_date" name="time" min="2021-01-01" max="2021-12-31"/><br>
+            <br>
+            <button>Add</button><br>
+
+            <br>
+            <label><b>Subtask:</b></label><br><br>
+
+            <div>
+                <label for="add_entry_name">Add to entry:</label>
+                <input list="name_list" name="add_entry_name" id="add_entry_name">
+                <datalist id="name_list">
+                    <option value="Apri 11 Sun">
+                    <option value="Apri 10 Sat">
+                    <option value="Apri 09 Fri">
+                </datalist>
+            </div>
+
+            <br>
+
+
+            <label for="summary">Summary:</label>
+            <input type="text" id="summary" /><br><br>
+
+            <label for="summary_color">Summary color:</label>
+            <select name="summary_color" id="summary_color">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="grey">Grey</option>
+            </select><br><br>
+
+            <label>Details:</label><br>
+            <textarea id="details" name="details" rows="10" cols="50">
+            </textarea>
+            
+
+            <br>
+            <button>Add</button><br>
+            
+            
+
+        </fieldset>
+
+        </form>
+        
+        <hr>
+        <footer>
+            <small>Copyright &copy; Yang Lu. All Rights Reserved</small>
+        </footer>
+    </body>
+
+</html>
