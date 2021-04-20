@@ -1,4 +1,120 @@
+.center_child {
+    text-align: center;
+}
+
 .video {
     margin: auto;
     width: 1024px;
+}
+
+.cell_title {
+    margin-left: 1em;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: auto;
+}
+
+.v_box {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 100px;
+    width: 130px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.a_box {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    height: 23px;
+    width: 120px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+
+.video_boxes {
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+    min-height: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-width: 160px;
+    max-width: 90%;
+    max-height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+
+
+.audio_boxes {
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    min-width: 120px;
+    height: 20px;
+    max-width: 90%;
+    max-height: 70%;
+
+}
+
+.text_cell {
+    padding: 15px, 15px, 15px, 15px;
+    grid-area: text;
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+    min-width: 400px;
+    min-height: 220px;
+}
+
+.audio_cell {
+    min-width: 400px;
+    padding: 15px, 15px, 15px, 15px;
+    grid-area: audio;
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+    min-height: 220px;
+}
+
+.video_cell {
+    min-width: 400px;
+    padding: 15px, 15px, 15px, 15px;
+    grid-area: video;
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+    min-height: 220px;
+}
+
+.todo_cell {
+    padding: 15px, 15px, 15px, 15px;
+    grid-area: todo;
+    border: 2px solid #d6d6d6;
+    border-radius: 10px;
+    min-width: 400px;
+    min-height: 220px;
+}
+
+.journal_container {
+    display:grid;
+    margin: auto;
+    width:1024px;
+    padding-top: 5mm; 
+    padding-left: 5mm;
+    padding-right: 5mm; 
+    padding-bottom: 5mm;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    grid-template-areas: 
+        "text video"
+        "todo audio";
 }
