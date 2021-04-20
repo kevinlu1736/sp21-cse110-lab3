@@ -2,14 +2,39 @@
     text-align: center;
 }
 
+.adv {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    height: 120px;
+    width: 200px;
+    background-color: thistle;
+    color: slateblue;
+    text-align: center;
+    padding: 10px 5px auto 5px;
+    z-index: 100;
+}
+
+.adv p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+
+/* navigation bar */
+
 nav {
+    width: 100%;
+    position:fixed;
+    top: 0px;
     background-color: #008080;
     height:30px;
 }
 
 #nav_icon {
     margin:0px 3px 0px 0px;
-    height:30px;
+    height:32px;
     width:26px;
     background-color: rgb(255, 255, 255);
     display: inline-block;
@@ -40,10 +65,19 @@ nav div[dynamic-id="nav_items"] a{
     display: inline;
 }
 
+nav div[dynamic-id="nav_items"] a:hover{
+    color:yellowgreen;
+}
+nav div[dynamic-id="nav_items"] a:visited{
+    color: thistle;
+}
+
 nav div[dynamic-id="nav_items"] a~a{
     border-left: 1.2px solid hsl(0, 0%, 98.8%);
     padding-left: 2px;
 }
+
+/* body */
 
 .video {
     margin: auto;
@@ -65,6 +99,7 @@ nav div[dynamic-id="nav_items"] a~a{
     text-align: center;
     border: 1px solid grey;
     border-radius: 5px;
+    background-color:powderblue;
 }
 
 .a_box {
@@ -76,7 +111,7 @@ nav div[dynamic-id="nav_items"] a~a{
     text-align: center;
     border: 1px solid grey;
     border-radius: 5px;
-
+    background-color:powderblue;
 }
 
 .video_boxes {
@@ -116,6 +151,7 @@ nav div[dynamic-id="nav_items"] a~a{
     border-radius: 10px;
     min-width: 400px;
     min-height: 220px;
+    background-color: lightsteelblue;
 }
 
 .audio_cell {
@@ -125,6 +161,7 @@ nav div[dynamic-id="nav_items"] a~a{
     border: 2px solid #d6d6d6;
     border-radius: 10px;
     min-height: 220px;
+    background-color: lightsteelblue;
 }
 
 .video_cell {
@@ -134,15 +171,18 @@ nav div[dynamic-id="nav_items"] a~a{
     border: 2px solid #d6d6d6;
     border-radius: 10px;
     min-height: 220px;
+    background-color: lightsteelblue;
 }
 
 .todo_cell {
+    background-color: lightsteelblue;
     padding: 15px, 15px, 15px, 15px;
     grid-area: todo;
     border: 2px solid #d6d6d6;
     border-radius: 10px;
     min-width: 400px;
     min-height: 220px;
+    background-color: lightsteelblue;
 }
 
 .journal_container {
@@ -180,6 +220,58 @@ form button {
     font-size: 12pt;
 }
 
-section {
+/* small fixes */
+
+body {
     font-family: 'Roboto', sans-serif;
+}
+
+.v_box:active {
+    background-color:steelblue;
+    color: white;
+}
+.a_box:active {
+    background-color:steelblue;
+    color: white;
+}
+.v_box:hover {
+    cursor: pointer;
+    font-size: 16pt;
+    font-weight: bold;
+}
+.a_box:hover {
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+summary:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color:teal;
+}
+
+form {
+    display:block;
+    margin:auto 15px auto 15px;
+    background-color: rgb(162, 226, 252);
+}
+
+
+footer {
+    margin-top: 15px;
+    padding-top: 42px;
+    height:80px;
+    background-color:rgb(39, 39, 39);
+    font-size: 16px;
+    font-weight: bold;
+    color: floralwhite;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .video {
+        width:400px;
+        margin:auto;
+    }
 }
