@@ -2,6 +2,49 @@
     text-align: center;
 }
 
+nav {
+    background-color: #008080;
+    height:30px;
+}
+
+#nav_icon {
+    margin:0px 3px 0px 0px;
+    height:30px;
+    width:26px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    vertical-align:middle;
+}
+
+#nav_icon * {
+    height: 20px;
+    margin-top: 5px;
+}
+
+nav span {
+    margin-top:5px;
+    margin-bottom:5px;
+    display: inline-block;
+    color:hsl(0, 0%, 98.8%);
+}
+
+nav div[dynamic-id="nav_items"] {
+    margin-top:5px;
+    margin-bottom:5px;
+    display: inline-block;
+}
+
+nav div[dynamic-id="nav_items"] a{
+    text-decoration: none;
+    color:hsl(0, 0%, 98.8%);
+    display: inline;
+}
+
+nav div[dynamic-id="nav_items"] a~a{
+    border-left: 1.2px solid hsl(0, 0%, 98.8%);
+    padding-left: 2px;
+}
+
 .video {
     margin: auto;
     width: 1024px;
@@ -117,4 +160,26 @@
     grid-template-areas: 
         "text video"
         "todo audio";
+}
+
+/* For add new entry */
+
+label + input {
+    display:block;
+}
+
+select .important {
+    font-weight: bold;
+}
+
+datalist > option {
+    font-weight: bold;
+}
+
+form button {
+    font-size: 12pt;
+}
+
+section {
+    font-family: 'Roboto', sans-serif;
 }

@@ -6,21 +6,25 @@
         <title>Cse110 Lab2</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link rel="stylesheet" href="lab3.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
-        <hr>
 
         <nav>
-            <img src="icon.png" alt="icon" width="15"/>
-            Recent: &nbsp;&nbsp;
-            <a href="/#day3">Apr 11 Sat</a> |
-            <a href="/#day2">Apr 10 Sat</a> |
-            <a href="/#day1">Apr 09 Fri</a> 
+            <div id="nav_icon">
+                <img src="icon.png" alt="icon" />
+            </div>
+            <span>Recent: &nbsp;&nbsp;</span>
+            <div dynamic-id="nav_items">
+                <a href="/#day3">Apr 11 Sat</a> 
+                <a href="/#day2">Apr 10 Sat</a> 
+                <a href="/#day1">Apr 09 Fri</a> 
+                <a href="/#day0" style="display:none;">hidden day</a>
+            </div>
         </nav>
-
-        <hr>
 
         <br/>
 
@@ -260,7 +264,7 @@
             <label for="summary_color">Summary color:</label>
             <select name="summary_color" id="summary_color">
                 <option value="red">Red</option>
-                <option value="green">Green</option>
+                <option value="green" class="important">Green</option>
                 <option value="blue">Blue</option>
                 <option value="black">Black</option>
                 <option value="grey">Grey</option>
